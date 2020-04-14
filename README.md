@@ -1,3 +1,65 @@
+# Fork #86 of unidoc/unipdf
+
+Thanks to Gus (CEO) for taking time clarify that their preferred route is indeed for community users to just fork and maintain themselves (mental note to self, check how many have forked something next time - #85 here - before bothering folks)! Your efforts in supporting the open source community are very much appreciated. Just for my future reference, here's our conversation....
+
+```
+---------- Forwarded message ---------
+From: Tim Drysdale <timothy.d.drysdale@gmail.com>
+Date: Tue, Apr 14, 2020 at 10:03 PM
+Subject: Re: community license key for unipdf
+To: Support <support@unidoc.io>
+
+
+Hi Gus
+
+Thanks very much. Happy to fork and maintain ourselves as you suggest, as is indeed an AGPL project. That was the clarity I was looking for. I do appreciate you making the library dual use to support the open source community, and taking the time to respond.
+
+Best wishes
+Tim
+
+---------- Forwarded message ---------
+From: Support <support@unidoc.io>
+Date: Tue, Apr 14, 2020 at 9:13 PM
+Subject: Re: community license key for unipdf
+To: Tim Drysdale <timothy.d.drysdale@gmail.com>
+
+
+Sorry Tim, I did not mean to call you Samuel :).
+
+Best.
+Gus - CEO
+
+
+--
+Gunnsteinn Hall
+support@unidoc.io
+
+
+On Tue, 14 Apr 2020, 21:12 Support, <support@unidoc.io> wrote:
+Hi Samuel.
+We do not issue AGPL licenses nor do we provide any support at all. We would like to accommodate everyone but keeping top-tier libraries requires constant reinvestment.
+Real AGPL users will have to maintain their own forks.
+The entire stack needs to be AGPL for this use case to work including all of your applications that use this API. Therefore we ask you to please consider buying a business license.
+
+Best.
+Gus - CEO
+
+
+--
+Gunnsteinn Hall
+support@unidoc.io
+{#HS:1135689021-179#} ￼ 
+On Mon, Apr 13, 2020 at 3:57 PM UTC, Tim Drysdale <timothy.d.drysdale@gmail.com> wrote:
+Hi there
+
+What's the process please for applying for a community license key to use with your golang libary at https://github.com/unidoc/unipdf ?
+
+I'm an academic writing educational software for remote labs and exam marking, all released under AGPL (this is my project maintainer's email but I am a Full/Chair Professor at a UK University).
+
+Best wishes
+Tim
+```
+
 # UniPDF - PDF for Go
 
 [UniDoc](http://unidoc.io)'s UniPDF (formerly unidoc) is a PDF library for Go (golang) with capabilities for
