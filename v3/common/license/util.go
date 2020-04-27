@@ -3,7 +3,7 @@
  * file 'LICENSE.md', which is part of this source code package.
  */
 
-// Package license helps manage commercial licenses and check if they are valid for the version of unidoc used.
+// Package license helps manage commercial licenses and check if they are valid for the version of timdrysdale used.
 package license
 
 import (
@@ -12,7 +12,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"github.com/timdrysdale/unipdf/v3/common"
 )
 
 // Defaults to unlicensed.

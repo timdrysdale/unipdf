@@ -13,11 +13,11 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/contentstream"
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/internal/transform"
-	"github.com/unidoc/unipdf/v3/model"
+	"github.com/timdrysdale/unipdf/v3/common"
+	"github.com/timdrysdale/unipdf/v3/contentstream"
+	"github.com/timdrysdale/unipdf/v3/core"
+	"github.com/timdrysdale/unipdf/v3/internal/transform"
+	"github.com/timdrysdale/unipdf/v3/model"
 	"golang.org/x/text/unicode/norm"
 )
 

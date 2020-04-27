@@ -41,7 +41,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 * [fpdf - Kurt Jung](https://github.com/jung-kurt/gofpdf), MIT license.
 
-  - Used for TrueType (TTF) font file parsing (unidoc/pdf/model/fonts/ttfparser.go).
+  - Used for TrueType (TTF) font file parsing (timdrysdale/pdf/model/fonts/ttfparser.go).
 ```
 MIT License
 
@@ -77,10 +77,10 @@ file(s); and that this paragraph is not modified. Adobe Systems has no
 responsibility or obligation to support the use of the AFM files.
 ```
 
-  - Used for support of the 14 core fonts (see unidoc/pdf/model/fonts/afms).
+  - Used for support of the 14 core fonts (see timdrysdale/pdf/model/fonts/afms).
 
 * [Adobe Glyph List](https://github.com/adobe-type-tools/agl-aglfn), BSD-3 license.
-  - Used for glyph and textencoding support (see unidoc/pdf/model/textencoding/glyphlist).
+  - Used for glyph and textencoding support (see timdrysdale/pdf/model/textencoding/glyphlist).
 
 ```
 Redistribution and use in source and binary forms, with or without

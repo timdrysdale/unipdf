@@ -12,12 +12,12 @@ import (
 	"io/ioutil"
 	"sort"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/core"
+	"github.com/timdrysdale/unipdf/v3/common"
+	"github.com/timdrysdale/unipdf/v3/core"
 
-	"github.com/unidoc/unipdf/v3/internal/cmap"
-	"github.com/unidoc/unipdf/v3/internal/textencoding"
-	"github.com/unidoc/unipdf/v3/model/internal/fonts"
+	"github.com/timdrysdale/unipdf/v3/internal/cmap"
+	"github.com/timdrysdale/unipdf/v3/internal/textencoding"
+	"github.com/timdrysdale/unipdf/v3/model/internal/fonts"
 )
 
 /*

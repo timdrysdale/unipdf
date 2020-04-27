@@ -11,12 +11,12 @@ import (
 	"math"
 	"strings"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"github.com/timdrysdale/unipdf/v3/common"
 
-	"github.com/unidoc/unipdf/v3/internal/jbig2/bitmap"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/decoder/arithmetic"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/decoder/huffman"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/reader"
+	"github.com/timdrysdale/unipdf/v3/internal/jbig2/bitmap"
+	"github.com/timdrysdale/unipdf/v3/internal/jbig2/decoder/arithmetic"
+	"github.com/timdrysdale/unipdf/v3/internal/jbig2/decoder/huffman"
+	"github.com/timdrysdale/unipdf/v3/internal/jbig2/reader"
 )
 
 // SymbolDictionary is the model for the JBIG2 Symbol Dictionary Segment - see 7.4.2.

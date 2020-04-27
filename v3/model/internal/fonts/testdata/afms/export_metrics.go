@@ -17,9 +17,9 @@ import (
 
 	"flag"
 
-	pdfcommon "github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/internal/fonts"
-	"github.com/unidoc/unipdf/v3/model"
+	pdfcommon "github.com/timdrysdale/unipdf/v3/common"
+	"github.com/timdrysdale/unipdf/v3/internal/fonts"
+	"github.com/timdrysdale/unipdf/v3/model"
 )
 
 func main() {

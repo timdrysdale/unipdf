@@ -11,8 +11,8 @@ import (
 	"image/color"
 	"math"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/core"
+	"github.com/timdrysdale/unipdf/v3/common"
+	"github.com/timdrysdale/unipdf/v3/core"
 )
 
 // PdfColorspace interface defines the common methods of a PDF colorspace.
@@ -2191,7 +2191,7 @@ func (cs *PdfColorspaceSpecialPattern) ColorFromPdfObjects(objects []core.PdfObj
 
 // ColorToRGB only converts color used with uncolored patterns (defined in underlying colorspace).  Does not go into the
 // pattern objects and convert those.  If that is desired, needs to be done separately.  See for example
-// grayscale conversion example in unidoc-examples repo.
+// grayscale conversion example in timdrysdale-examples repo.
 func (cs *PdfColorspaceSpecialPattern) ColorToRGB(color PdfColor) (PdfColor, error) {
 	patternColor, ok := color.(*PdfColorPattern)
 	if !ok {
@@ -2401,7 +2401,7 @@ func (cs *PdfColorspaceSpecialIndexed) ImageToRGB(img Image) (Image, error) {
 	baseImage.Width = img.Width
 	baseImage.alphaData = img.alphaData
 	// TODO(peterwilliams97): Add support for other BitsPerComponent values.
-	// See https://github.com/unidoc/unipdf/issues/260
+	// See https://github.com/timdrysdale/unipdf/issues/260
 	baseImage.BitsPerComponent = 8
 	baseImage.hasAlpha = img.hasAlpha
 	baseImage.ColorComponents = cs.Base.GetNumComponents()

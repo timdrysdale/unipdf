@@ -16,6 +16,6 @@ These activities include:
  * creating/manipulating documents for users in a web/server/cloud application
  * shipping unipdf with a closed source product
 
-Please see [pricing](http://unidoc.io/pricing) to purchase a commercial license or contact sales at sales@unidoc.io
+Please see [pricing](http://timdrysdale.io/pricing) to purchase a commercial license or contact sales at sales@timdrysdale.io
 for more info.
 

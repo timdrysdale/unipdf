@@ -3,14 +3,14 @@
  * file 'LICENSE.md', which is part of this source code package.
  */
 
-// Package strutils provides convenient functions for string processing in unidoc internally.
+// Package strutils provides convenient functions for string processing in timdrysdale internally.
 package strutils
 
 import (
 	"bytes"
 	"unicode/utf16"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"github.com/timdrysdale/unipdf/v3/common"
 )
 
 var pdfdocEncodingRuneMap map[rune]byte

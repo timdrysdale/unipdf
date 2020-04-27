@@ -18,9 +18,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/extractor"
-	"github.com/unidoc/unipdf/v3/model"
+	"github.com/timdrysdale/unipdf/v3/common"
+	"github.com/timdrysdale/unipdf/v3/extractor"
+	"github.com/timdrysdale/unipdf/v3/model"
 )
 
 // Extract images test writes out a zip file containing all images extracted
@@ -74,7 +74,7 @@ func TestExtractImages(t *testing.T) {
 	}
 
 	// Make a temporary folder and clean up after.
-	tempdir, err := ioutil.TempDir("", "unidoc_extract_images")
+	tempdir, err := ioutil.TempDir("", "timdrysdale_extract_images")
 	require.NoError(t, err)
 	defer os.RemoveAll(tempdir)
 
