@@ -30,11 +30,11 @@ import (
 	"github.com/boombuler/barcode/qr"
 	"github.com/stretchr/testify/require"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/contentstream/draw"
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/model"
-	"github.com/unidoc/unipdf/v3/model/optimize"
+	"github.com/timdrysdale/unipdf/v3/common"
+	"github.com/timdrysdale/unipdf/v3/contentstream/draw"
+	"github.com/timdrysdale/unipdf/v3/core"
+	"github.com/timdrysdale/unipdf/v3/model"
+	"github.com/timdrysdale/unipdf/v3/model/optimize"
 )
 
 func init() {
@@ -44,7 +44,7 @@ func init() {
 // Rendering tests are run when UNIDOC_RENDERTEST_BASELINE_PATH environment variable is set to
 // a folder containing a rendered PNG image of each page of generated PDF files.
 // Rendering requires gs (ghostscript) to be present on the system.
-// To generate the images based on the current version of unidoc, set UNIDOC_RENDERTEST_BASELINE_PATH
+// To generate the images based on the current version of timdrysdale, set UNIDOC_RENDERTEST_BASELINE_PATH
 // and run the test as usual. Files for all tests will be generated. Rename ones you want to test from
 // xxx.png to xxx_exp.png, make changes to the code and run the test again (with environment variable set).
 
@@ -2004,7 +2004,7 @@ func TestHeadersAndFooters(t *testing.T) {
 
 	c.Draw(ch1)
 
-	// Make unidoc headers and footers.
+	// Make timdrysdale headers and footers.
 	addHeadersAndFooters(c)
 
 	testWriteAndRender(t, c, "4_headers.pdf")
@@ -3085,7 +3085,7 @@ func testRender(t *testing.T, pdfPath string) {
 	saveBaseline := false
 
 	// Write rendering outputs to a temporary directory that is cleaned up afterwards.
-	tempDir, err := ioutil.TempDir("", "unidoc")
+	tempDir, err := ioutil.TempDir("", "timdrysdale")
 	if err != nil {
 		t.Fatalf("Error: %v", err)
 	}

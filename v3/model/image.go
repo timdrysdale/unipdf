@@ -17,9 +17,9 @@ import (
 	_ "image/gif"
 	_ "image/png"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/internal/sampling"
+	"github.com/timdrysdale/unipdf/v3/common"
+	"github.com/timdrysdale/unipdf/v3/core"
+	"github.com/timdrysdale/unipdf/v3/internal/sampling"
 )
 
 // Image interface is a basic representation of an image used in PDF.
@@ -294,7 +294,7 @@ func (img *Image) Resample(targetBitsPerComponent int64) {
 	img.BitsPerComponent = int64(targetBitsPerComponent)
 }
 
-// ToGoImage converts the unidoc Image to a golang Image structure.
+// ToGoImage converts the timdrysdale Image to a golang Image structure.
 func (img *Image) ToGoImage() (goimage.Image, error) {
 	common.Log.Trace("Converting to go image")
 	bounds := goimage.Rect(0, 0, int(img.Width), int(img.Height))
@@ -344,10 +344,10 @@ type ImageHandler interface {
 	// Read any image type and load into a new Image object.
 	Read(r io.Reader) (*Image, error)
 
-	// NewImageFromGoImage loads a RGBA unidoc Image from a standard Go image structure.
+	// NewImageFromGoImage loads a RGBA timdrysdale Image from a standard Go image structure.
 	NewImageFromGoImage(goimg goimage.Image) (*Image, error)
 
-	// NewGrayImageFromGoImage loads a grayscale unidoc Image from a standard Go image structure.
+	// NewGrayImageFromGoImage loads a grayscale timdrysdale Image from a standard Go image structure.
 	NewGrayImageFromGoImage(goimg goimage.Image) (*Image, error)
 
 	// Compress an image.
@@ -357,7 +357,7 @@ type ImageHandler interface {
 // DefaultImageHandler is the default implementation of the ImageHandler using the standard go library.
 type DefaultImageHandler struct{}
 
-// NewImageFromGoImage creates a new RGBA unidoc Image from a golang Image.
+// NewImageFromGoImage creates a new RGBA timdrysdale Image from a golang Image.
 // If `goimg` is grayscale (*goimage.Gray) then calls NewGrayImageFromGoImage instead.
 func (ih DefaultImageHandler) NewImageFromGoImage(goimg goimage.Image) (*Image, error) {
 	b := goimg.Bounds()
@@ -416,7 +416,7 @@ func (ih DefaultImageHandler) NewImageFromGoImage(goimg goimage.Image) (*Image, 
 	return &imag, nil
 }
 
-// NewGrayImageFromGoImage creates a new grayscale unidoc Image from a golang Image.
+// NewGrayImageFromGoImage creates a new grayscale timdrysdale Image from a golang Image.
 func (ih DefaultImageHandler) NewGrayImageFromGoImage(goimg goimage.Image) (*Image, error) {
 	b := goimg.Bounds()
 

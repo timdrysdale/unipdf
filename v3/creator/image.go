@@ -11,11 +11,11 @@ import (
 	goimage "image"
 	"os"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/contentstream"
-	"github.com/unidoc/unipdf/v3/contentstream/draw"
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/model"
+	"github.com/timdrysdale/unipdf/v3/common"
+	"github.com/timdrysdale/unipdf/v3/contentstream"
+	"github.com/timdrysdale/unipdf/v3/contentstream/draw"
+	"github.com/timdrysdale/unipdf/v3/core"
+	"github.com/timdrysdale/unipdf/v3/model"
 )
 
 // The Image type is used to draw an image onto PDF.
@@ -55,7 +55,7 @@ type Image struct {
 	encoder core.StreamEncoder
 }
 
-// newImage create a new image from a unidoc image (model.Image).
+// newImage create a new image from a timdrysdale image (model.Image).
 func newImage(img *model.Image) (*Image, error) {
 	// Image original size in points = pixel size.
 	width := float64(img.Width)

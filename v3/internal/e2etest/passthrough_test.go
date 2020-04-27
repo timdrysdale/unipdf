@@ -12,8 +12,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/model"
+	"github.com/timdrysdale/unipdf/v3/common"
+	"github.com/timdrysdale/unipdf/v3/model"
 )
 
 // Passthrough benchmark loads a PDF, writes back out and performs a sanity check on the output with ghostscript.
@@ -43,7 +43,7 @@ func TestPassthrough(t *testing.T) {
 	}
 
 	// Make a temporary folder and clean up after.
-	tempdir, err := ioutil.TempDir("", "unidoc_passthrough")
+	tempdir, err := ioutil.TempDir("", "timdrysdale_passthrough")
 	if err != nil {
 		t.Fatalf("Failed to create temporary folder")
 	}

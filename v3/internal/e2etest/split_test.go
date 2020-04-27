@@ -12,8 +12,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/model"
+	"github.com/timdrysdale/unipdf/v3/common"
+	"github.com/timdrysdale/unipdf/v3/model"
 )
 
 // Split tests splits a single page from a PDF, writes out and performs a sanity check on the output with ghostscript.
@@ -57,7 +57,7 @@ func TestSplitting(t *testing.T) {
 	}
 
 	// Make a temporary folder and clean up after.
-	tempdir, err := ioutil.TempDir("", "unidoc_split")
+	tempdir, err := ioutil.TempDir("", "timdrysdale_split")
 	require.NoError(t, err)
 	defer os.RemoveAll(tempdir)
 

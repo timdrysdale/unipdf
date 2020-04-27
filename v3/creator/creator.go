@@ -12,8 +12,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/model"
+	"github.com/timdrysdale/unipdf/v3/common"
+	"github.com/timdrysdale/unipdf/v3/model"
 )
 
 // Creator is a wrapper around functionality for creating PDF reports and/or adding new
@@ -818,7 +818,7 @@ func (c *Creator) NewCurve(x1, y1, cx, cy, x2, y2 float64) *Curve {
 	return newCurve(x1, y1, cx, cy, x2, y2)
 }
 
-// NewImage create a new image from a unidoc image (model.Image).
+// NewImage create a new image from a timdrysdale image (model.Image).
 func (c *Creator) NewImage(img *model.Image) (*Image, error) {
 	return newImage(img)
 }

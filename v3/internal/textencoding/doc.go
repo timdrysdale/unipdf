@@ -3,6 +3,6 @@
  * file 'LICENSE.md', which is part of this source code package.
  */
 
-// Package textencoding is used for handling text encoding (char code <-> glyph mapping) in unidoc
+// Package textencoding is used for handling text encoding (char code <-> glyph mapping) in timdrysdale
 // both for reading and outputing PDF contents.
 package textencoding

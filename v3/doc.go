@@ -11,10 +11,10 @@
 //
 // Check out the Getting Started and Example sections, which showcase how to install unipdf and provide numerous
 // examples of using unipdf to generate, process or modify PDF files.
-// https://unidoc.io/examples/getting_started/
+// https://timdrysdale.io/examples/getting_started/
 //
 // The GoDoc for unipdf provides a detailed breakdown of the API and documentation for packages, types and methods.
-// https://godoc.org/github.com/unidoc/unipdf
+// https://godoc.org/github.com/timdrysdale/unipdf
 //
 // Overview of Major Packages
 //
