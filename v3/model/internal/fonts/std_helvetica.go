@@ -123,8 +123,13 @@ func initHelvetica() {
 		helveticaCharMetrics[r] = CharMetrics{Wx: float64(helveticaWx[i])}
 		helveticaBoldCharMetrics[r] = CharMetrics{Wx: float64(helveticaBoldWx[i])}
 	}
+
+	tweakBackspaceMetric(&helveticaCharMetrics)
+	tweakBackspaceMetric(&helveticaBoldCharMetrics)
+
 	helveticaObliqueCharMetrics = helveticaCharMetrics
 	helveticaBoldObliqueCharMetrics = helveticaBoldCharMetrics
+
 }
 
 // helveticaCharMetrics are the font metrics loaded from afms/Helvetica.afm.

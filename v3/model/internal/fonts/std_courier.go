@@ -123,6 +123,8 @@ func initCourier() {
 		courierCharMetrics[r] = CharMetrics{Wx: wx}
 	}
 	// other font variant still have the same metrics
+
+	tweakBackspaceMetric(&courierCharMetrics)
 	courierBoldCharMetrics = courierCharMetrics
 	courierBoldObliqueCharMetrics = courierCharMetrics
 	courierObliqueCharMetrics = courierCharMetrics
