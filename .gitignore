@@ -9,6 +9,9 @@
 *.wixobj
 *.msi
 *.wixpdb
+*~
+*#
+.#*
 build
 dist
 setuptools-*

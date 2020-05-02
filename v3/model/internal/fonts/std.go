@@ -81,13 +81,27 @@ func NewStdFont(desc Descriptor, metrics map[rune]CharMetrics) StdFont {
 	return NewStdFontWithEncoding(desc, metrics, textencoding.NewStandardEncoder())
 }
 
+func tweakBackspaceMetric(metrics *(map[rune]CharMetrics)) {
+	var nbsp rune = 0xA0
+	if _, ok := (*metrics)[nbsp]; !ok {
+		// Use same metrics for 0xA0 (no-break space) and 0x20 (space).
+		(*metrics)[nbsp] = (*metrics)[0x20]
+	}
+}
+
 // NewStdFontWithEncoding returns a new instance of the font with a specified encoder.
 func NewStdFontWithEncoding(desc Descriptor, metrics map[rune]CharMetrics, encoder textencoding.TextEncoder) StdFont {
-	var nbsp rune = 0xA0
-	if _, ok := metrics[nbsp]; !ok {
-		// Use same metrics for 0xA0 (no-break space) and 0x20 (space).
-		metrics[nbsp] = metrics[0x20]
-	}
+	// Concurrent access to this when using unipdf in a worker pool
+	// at first glance this looks like a short hack to avoid verbose initialisation in std fonts
+	// Hence attempted concurrent-use fix is that:
+	// Fonts are to call the tweakBackspaceMetric in their initialisation routines, ONCE!
+	// Possible issue :- are there ANY uses where we'd access the metric and NOT want this?
+	// TDD 2 May 2020
+	//var nbsp rune = 0xA0
+	//if _, ok := metrics[nbsp]; !ok {
+	//	// Use same metrics for 0xA0 (no-break space) and 0x20 (space).
+	//	metrics[nbsp] = metrics[0x20]
+	//}
 
 	return StdFont{
 		desc:    desc,
